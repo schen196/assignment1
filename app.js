@@ -1,3 +1,8 @@
+// File Name: Assignment 1: Express Portfolio
+// Student Name: Steven Chen
+// Student Number: 301159710
+// Date: May 31, 2021
+
 var createError = require("http-errors");
 var express = require("express");
 var path = require("path");
