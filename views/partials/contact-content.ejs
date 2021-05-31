@@ -1,5 +1,5 @@
 
-
+<!-- contact content -->
 <main>
 	<div class="row">
 		<div class="col-sm-8">
@@ -7,43 +7,35 @@
 				<h1 class="page-title">Contact</h1>
 				<h4>Feel free to contact me by sending a message here!</h4>
 				<form method="app.get" action="/">
-					<div>
-						<label>First Name:</label>
-						<input type="text" required placeholder="John" />
+					<div class="row">
+						<div class="col">
+						  <input type="text" class="form-control" placeholder="First name">
+						</div>
+						<div class="col">
+						  <input type="text" class="form-control" placeholder="Last name">
+						</div>
+					<div class="form-group">
+						<input type="number" class="form-control" placeholder="Phone Number">
 					</div>
-
-					<div>
-						<label>Last Name:</label>
-						<input type="text" required placeholder="Doe" />
-					</div>
-					<div>
-						<label>Phone number:</label>
-						<input type="number" id="number" />
-					</div>
-					<div>
+					<div class="form-group">
 						<label>Email:</label>
 						<input
 							type="email"
 							id="email"
 							placeholder="JohnDoe@example.com"
+							class="form-control"
 							required
 						/>
 					</div>
 
-					<div>
+					<div class="form-group">
 						<label>Message:</label>
-						<input
-							type="text"
-							required
-							size="50"
-							style="height: 100px"
-							placeholder="Enter your message here"
-						/>
-					</div>
+						<textarea class="form-control" rows="3"></textarea>
+					  </div>
 
 					<div>
-						<button type="submit">Send Message</button>
-						<button type="reset">Clear Form</button>
+						<button class="btn btn-primary" type="submit">Send Message</button>
+						<button class="btn btn-primary" type="reset">Clear Form</button>
 					</div>
 				</form>
 			</div>
