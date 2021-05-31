@@ -1,8 +1,57 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	padding: 50px;
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
+	color: #00b7ff;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.page-title {
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+.grid-services {
+	display: grid;
+	grid: auto / repeat(2, 1fr);
+	gap: 50px;
+}
+
+.grid-services > li {
+	display: grid;
+	place-items: center;
+	gap: 20px;
+}
+
+.grid-services > li > span {
+	font-size: 1.5em;
+}
+
+.grid-services img {
+	width: 100%;
+	height: 400px;
+	object-fit: cover;
+}
+
+.grid-projects {
+	display: grid;
+	gap: 50px;
+}
+
+.grid-project {
+	display: grid;
+	grid: auto / 2fr 1fr;
+	gap: 50px;
+}
+
+.grid-project img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
 }
