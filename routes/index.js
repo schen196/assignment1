@@ -31,4 +31,14 @@ router.get("/projects", (req, res) => {
 	res.render("pages/projects");
 });
 
+/* GET register page. */
+router.get("/register", (req, res) => {
+	res.render("pages/register");
+});
+
+/* GET login page. */
+router.get("/login", (req, res) => {
+	res.render("pages/login");
+});
+
 module.exports = router;
