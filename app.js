@@ -1,4 +1,4 @@
-// File Name: Assignment 1: Express Portfolio
+// File Name: Assignment 2: Express Portfolio - Authentication
 // Student Name: Steven Chen
 // Student Number: 301159710
 // Date: May 31, 2021
@@ -8,15 +8,13 @@ var express = require("express");
 var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
-const mongoose = require('mongoose');
-
-mongoose.connect("mongodb://localhost:27017/authenticationDB",
-{useNewUrlParser: true,  useUnifiedTopology: true });
+var mongoose = require('mongoose');
+var passport = require('passport');
 
 var indexRouter = require("./routes/index");
+var mongooseRouter = require("./config/mongoose");
 
 var app = express();
-
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
